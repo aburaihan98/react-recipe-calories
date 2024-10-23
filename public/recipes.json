@@ -1,0 +1,100 @@
+{
+  "recipes": [
+    {
+      "recipe_id": 1,
+      "recipe_name": "Chicken Stir Fry",
+      "recipe_image": "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg",
+      "short_description": "A quick and delicious chicken stir fry with veggies.",
+      "ingredients": [
+        "500 g chicken breast",
+        "100 g bell pepper",
+        "50 g onion",
+        "120 ml soy sauce",
+        "1 tsp garlic",
+        "50 g broccoli"
+      ],
+      "preparing_time": "25 min",
+      "calories": "350 calories"
+    },
+    {
+      "recipe_id": 2,
+      "recipe_name": "Spaghetti Bolognese",
+      "recipe_image": "https://images.pexels.com/photos/262959/pexels-photo-262959.jpeg",
+      "short_description": "Classic Italian pasta dish with a rich meat sauce.",
+      "ingredients": [
+        "300 g minced beef",
+        "200 g spaghetti",
+        "100 g tomato sauce",
+        "50 g parmesan cheese",
+        "1 tbsp olive oil",
+        "1 clove garlic"
+      ],
+      "preparing_time": "40 min",
+      "calories": "600 calories"
+    },
+    {
+      "recipe_id": 3,
+      "recipe_name": "Vegetable Curry",
+      "recipe_image": "https://images.pexels.com/photos/1410236/pexels-photo-1410236.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "short_description": "A healthy and flavorful vegetable curry made with spices.",
+      "ingredients": [
+        "200 g carrots",
+        "150 g cauliflower",
+        "100 g spinach",
+        "1 tsp turmeric",
+        "1 tsp cumin",
+        "200 ml coconut milk"
+      ],
+      "preparing_time": "35 min",
+      "calories": "250 calories"
+    },
+    {
+      "recipe_id": 4,
+      "recipe_name": "Beef Tacos",
+      "recipe_image": "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg",
+      "short_description": "Mexican-style tacos filled with seasoned beef and toppings.",
+      "ingredients": [
+        "400 g ground beef",
+        "8 taco shells",
+        "50 g lettuce",
+        "50 g cheddar cheese",
+        "2 tbsp salsa",
+        "1 tbsp taco seasoning"
+      ],
+      "preparing_time": "20 min",
+      "calories": "480 calories"
+    },
+    {
+      "recipe_id": 5,
+      "recipe_name": "Grilled Salmon",
+      "recipe_image": "https://images.pexels.com/photos/1603901/pexels-photo-1603901.jpeg",
+      "short_description": "A simple and healthy grilled salmon dish.",
+      "ingredients": [
+        "2 salmon fillets",
+        "1 tbsp olive oil",
+        "1 tbsp lemon juice",
+        "1 tsp black pepper",
+        "1 tsp salt",
+        "50 g asparagus"
+      ],
+      "preparing_time": "15 min",
+      "calories": "300 calories"
+    },
+    {
+      "recipe_id": 6,
+      "recipe_name": "Mushroom Risotto",
+      "recipe_image": "https://images.pexels.com/photos/410648/pexels-photo-410648.jpeg",
+      "short_description": "Creamy Italian risotto made with mushrooms and parmesan.",
+      "ingredients": [
+        "300 g arborio rice",
+        "200 g mushrooms",
+        "100 ml white wine",
+        "50 g parmesan cheese",
+        "1 onion",
+        "1 tbsp olive oil"
+      ],
+      "preparing_time": "45 min",
+      "calories": "420 calories"
+    }
+  ]
+}
