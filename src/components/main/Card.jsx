@@ -1,22 +1,21 @@
 import { FaFire } from "react-icons/fa";
 import { TiStopwatch } from "react-icons/ti";
 
-export default function Card({ item }) {
+export default function Card({ recipe, handleAddToWantToCook }) {
   const {
-    recipe_id,
     recipe_name,
     recipe_image,
     short_description,
     ingredients,
     preparing_time,
     calories,
-  } = item;
+  } = recipe;
 
   return (
     <div className="p-6 border rounded-2xl">
       <div className="mb-6 h-[200px]">
         <img
-          className="rounded-2xl h-full"
+          className="rounded-2xl h-full w-full"
           src={recipe_image}
           alt={`${recipe_name} image`}
         />
@@ -26,9 +25,11 @@ export default function Card({ item }) {
       <h3 className="font-medium text-lg mb-4">
         Ingredients: {ingredients?.length}
       </h3>
-      <ul className="list-disc list-inside text-gray-500 text-lg pb-4 border-b">
-        {ingredients?.map((item) => (
-          <li>{item}</li>
+      <ul className="ml-8 text-gray-500 text-lg pb-4 border-b">
+        {ingredients?.map((item, index) => (
+          <li className="list-disc" key={index}>
+            {item}
+          </li>
         ))}
       </ul>
       <div className="flex items-center gap-4 my-6">
@@ -41,7 +42,10 @@ export default function Card({ item }) {
           <p>{calories} minutes</p>
         </div>
       </div>
-      <button className="py-3 px-6 text-black bg-[#0BE58A] rounded-full font-semibold text-xl">
+      <button
+        onClick={() => handleAddToWantToCook(recipe)}
+        className="py-3 px-6 text-black bg-[#0BE58A] rounded-full font-semibold text-xl"
+      >
         Want to Cook
       </button>
     </div>

@@ -13,8 +13,8 @@
         "1 tsp garlic",
         "50 g broccoli"
       ],
-      "preparing_time": "25 min",
-      "calories": "350 calories"
+      "preparing_time": 25,
+      "calories": 350
     },
     {
       "recipe_id": 2,
@@ -29,8 +29,8 @@
         "1 tbsp olive oil",
         "1 clove garlic"
       ],
-      "preparing_time": "40 min",
-      "calories": "600 calories"
+      "preparing_time": 40,
+      "calories": 600
     },
     {
       "recipe_id": 3,
@@ -45,8 +45,8 @@
         "1 tsp cumin",
         "200 ml coconut milk"
       ],
-      "preparing_time": "35 min",
-      "calories": "250 calories"
+      "preparing_time": 35,
+      "calories": 250
     },
     {
       "recipe_id": 4,
@@ -61,8 +61,8 @@
         "2 tbsp salsa",
         "1 tbsp taco seasoning"
       ],
-      "preparing_time": "20 min",
-      "calories": "480 calories"
+      "preparing_time": 20,
+      "calories": 480
     },
     {
       "recipe_id": 5,
@@ -77,8 +77,8 @@
         "1 tsp salt",
         "50 g asparagus"
       ],
-      "preparing_time": "15 min",
-      "calories": "300 calories"
+      "preparing_time": 15,
+      "calories": 300
     },
     {
       "recipe_id": 6,
@@ -93,8 +93,8 @@
         "1 onion",
         "1 tbsp olive oil"
       ],
-      "preparing_time": "45 min",
-      "calories": "420 calories"
+      "preparing_time": 45,
+      "calories": 420
     }
   ]
 }

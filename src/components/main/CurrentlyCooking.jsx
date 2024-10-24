@@ -1,8 +1,16 @@
-export default function CurrentlyCooking() {
+export default function CurrentlyCooking({ currently }) {
+  const totalTimes = currently.reduce((total, currentValue) => {
+    return total + currentValue?.preparing_time;
+  }, 0);
+
+  const totalCalories = currently.reduce((total, currentValue) => {
+    return total + currentValue?.calories;
+  }, 0);
+
   return (
     <div className="mt-8">
       <h2 className="font-semibold text-2xl pb-4 border-b w-[350px] m-auto text-center">
-        Currently cooking: 02
+        Currently cooking: {currently?.length}
       </h2>
       <div className="mt-3">
         <table>
@@ -14,20 +22,22 @@ export default function CurrentlyCooking() {
               <th className="p-3">Calories</th>
             </tr>
           </thead>
-          <tbody className="bg-[#28282808]">
-            <tr>
-              <td className="p-4">1</td>
-              <td className="p-4">Chicken Caesar Salad</td>
-              <td className="p-4">20 minutes</td>
-              <td className="p-4">400 calories</td>
-            </tr>
+          <tbody>
+            {currently?.map((recipe) => (
+              <tr className="hover:bg-[#0303032d]" key={recipe?.recipe_id}>
+                <td className="p-4">1</td>
+                <td className="p-4">{recipe?.recipe_name}</td>
+                <td className="p-4">{recipe?.preparing_time} minutes</td>
+                <td className="p-4">{recipe?.calories} calories</td>
+              </tr>
+            ))}
           </tbody>
           <tbody>
             <tr>
               <td className="p-4"></td>
               <td className="p-4"></td>
-              <td className="p-4">Total Time = 45 minutes</td>
-              <td className="p-4">Total Calories = 1050 calories</td>
+              <td className="p-4">Total Time = {totalTimes} minutes</td>
+              <td className="p-4">Total Calories = {totalCalories} calories</td>
             </tr>
           </tbody>
         </table>

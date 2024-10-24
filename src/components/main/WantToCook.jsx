@@ -1,4 +1,4 @@
-export default function WantToCook() {
+export default function WantToCook({ wantCooks, handleAddToCurrentlyCooking }) {
   return (
     <div className="mt-3">
       <table>
@@ -10,18 +10,25 @@ export default function WantToCook() {
             <th className="p-3">Calories</th>
           </tr>
         </thead>
-        <tbody className="bg-[#28282808]">
-          <tr>
-            <td className="p-3">1</td>
-            <td className="p-3">Chicken Caesar Salad</td>
-            <td className="p-3">20 minutes</td>
-            <td className="p-3">400 calories</td>
-            <td className="p-3">
-              <span className="py-[9px] px-[18px] rounded-full bg-[#0BE58A] font-medium">
-                Preparing
-              </span>
-            </td>
-          </tr>
+        <tbody>
+          {wantCooks?.map((recipe, index) => (
+            <tr className="hover:bg-[#0303032d]" key={recipe?.recipe_id}>
+              <td className="p-3">{index + 1}</td>
+              <td className="p-3">{recipe?.recipe_name}</td>
+              <td className="p-3">{recipe?.preparing_time} minutes</td>
+              <td className="p-3">{recipe?.calories} calories</td>
+              <td className="p-3">
+                <button
+                  onClick={() => {
+                    handleAddToCurrentlyCooking(recipe);
+                  }}
+                  className="py-[9px] px-[18px] rounded-full bg-[#0BE58A] font-medium"
+                >
+                  Preparing
+                </button>
+              </td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>

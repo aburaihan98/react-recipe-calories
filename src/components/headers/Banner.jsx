@@ -15,11 +15,11 @@ export default function Banner() {
         Database and solve 500+ coding <br className=" hidden lg:block" />{" "}
         problems to become an exceptionally well world-class Programmer.
       </p>
-      <div className=" space-x-7">
-        <button className="py-5 px-[30px] text-black bg-[#0BE58A] rounded-full font-semibold text-xl">
+      <div className="w-full lg:w-auto flex flex-col lg:flex-row lg:space-x-7 px-4">
+        <button className="w-full lg:w-auto py-5 px-10 text-black bg-[#0BE58A] rounded-full font-semibold text-xl">
           Explore Now
         </button>
-        <button className="py-5 px-[30px]  bg-transparent border rounded-full font-semibold text-xl">
+        <button className="w-full lg:w-auto py-5 px-10 bg-transparent border rounded-full font-semibold text-xl mt-4 lg:mt-0">
           Our Feedback
         </button>
       </div>
